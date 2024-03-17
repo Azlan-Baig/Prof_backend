@@ -6,3 +6,6 @@ class ApiResponse{
         this.success = this.success < 400 // ye isiliye k Api response k zariye jo bh error status huta hai wo below 400 huta hai
     }
 }
+
+
+export {ApiResponse}

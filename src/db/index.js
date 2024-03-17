@@ -6,7 +6,7 @@ const connectDB = async () => {
     //mongoose ki achi baat ye hai k ye aapko object return karta hai.
     //  yaani k menay isko variable me save kar k iska response save karlia hai mongoose.connect ka
     const ConnectionInstance = await mongoose.connect(
-      `${process.env.Database_URL}/${DB_NAME}`
+      `${process.env.MONGODB_URI}/${DB_NAME}`
     );
     console.log(
       `\n MongoDb Connected : !! DB Host: ${ConnectionInstance.connection.host}`
